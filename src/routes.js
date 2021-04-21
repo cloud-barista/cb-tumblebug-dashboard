@@ -3,6 +3,15 @@ import React from 'react';
 const Toaster = React.lazy(() => import('./views/notifications/toaster/Toaster'));
 const Tables = React.lazy(() => import('./views/base/tables/Tables'));
 
+// const Drivers = React.lazy(() => import('./views/spiderWrapper/drivers/Drivers'));
+// const Regions = React.lazy(() => import('./views/spiderWrapper/regions/Regions'));
+// const Credentials = React.lazy(() => import('./views/spiderWrapper/credentials/Credentials'));
+// const ConnConfigs = React.lazy(() => import('./views/spiderWrapper/connconfigs/ConnConfigs'));
+
+const Namespaces = React.lazy(() => import('./views/namespaces/Namespaces'));
+const Namespace = React.lazy(() => import('./views/namespaces/Namespace'));
+const PostNamespace = React.lazy(() => import('./views/namespaces/PostNamespace'));
+
 const Breadcrumbs = React.lazy(() => import('./views/base/breadcrumbs/Breadcrumbs'));
 const Cards = React.lazy(() => import('./views/base/cards/Cards'));
 const Carousels = React.lazy(() => import('./views/base/carousels/Carousels'));
@@ -44,6 +53,16 @@ const routes = [
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
+
+//   { path: '/spiderWrapper/drivers', name: 'Drivers', component: Drivers },
+//   { path: '/spiderWrapper/regions', name: 'Regions', component: Regions },
+//   { path: '/spiderWrapper/credentials', name: 'Credentials', component: Credentials },
+//   { path: '/spiderWrapper/connconfigs', name: 'ConnConfigs', component: ConnConfigs },
+
+  { path: '/namespaces', exact: true, name: 'Namespaces', component: Namespaces },
+  { path: '/namespaces/:id', exact: true, name: 'Namespaces Details', component: Namespace },
+  { path: '/postNamespaces', exact: true, name: 'Create New Namespaces', component: PostNamespace },
+
   { path: '/base', name: 'Base', component: Cards, exact: true },
   { path: '/base/breadcrumbs', name: 'Breadcrumbs', component: Breadcrumbs },
   { path: '/base/cards', name: 'Cards', component: Cards },

@@ -12,6 +12,93 @@ const _nav =  [
       text: 'NEW',
     }
   },
+
+  {
+    _tag: 'CSidebarNavTitle',
+    _children: ['CB-Spider configs']
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Cloud Driver',
+    to: '/spiderWrapper/drivers',
+    icon: 'cil-pencil',
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Cloud Region',
+    to: '/spiderWrapper/regions',
+    icon: 'cil-pencil',
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Cloud Credential',
+    to: '/spiderWrapper/credentials',
+    icon: 'cil-pencil',
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Cloud Connection Config',
+    to: '/spiderWrapper/connconfigs',
+    icon: 'cil-pencil',
+  },
+
+  {
+    _tag: 'CSidebarNavTitle',
+    _children: ['Namespace']
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Namespace',
+    to: '/namespaces',
+    icon: 'cil-pencil',
+  },
+
+  {
+    _tag: 'CSidebarNavTitle',
+    _children: ['MCIR']
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'vNet',
+    to: '/mcir/vNet',
+    icon: 'cil-pencil',
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Security Group',
+    to: '/mcir/securityGroup',
+    icon: 'cil-pencil',
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'SSH Access Key',
+    to: '/mcir/sshKey',
+    icon: 'cil-pencil',
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Image',
+    to: '/mcir/image',
+    icon: 'cil-pencil',
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Spec',
+    to: '/mcir/spec',
+    icon: 'cil-pencil',
+  },
+
+  {
+    _tag: 'CSidebarNavTitle',
+    _children: ['MCIS']
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'MCIS',
+    to: '/mcis',
+    icon: 'cil-pencil',
+  },
+
   {
     _tag: 'CSidebarNavTitle',
     _children: ['Theme']
